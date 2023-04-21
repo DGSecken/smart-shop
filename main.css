@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+header {
+    background-color: rgb(150, 60, 192);
+    color: white;
+    padding: 8px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+header h2 {
+    font-size: 32px;
+    cursor: default;
+}
+
+/* ABOUT */
+
+.about {
+    display: flex;
+    padding: 40px 0;
+
+}
+
+.about img {
+    width: 55%;
+    padding-right: 16px;
+}
+
+.about h2 {
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgb(150, 60, 192);
+    font-weight: bold;
+    color:rgb(150, 60, 192);
+    font-style: italic;
+}
+
+.about h3 {
+    padding-top: 8px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* PRODUCTS */
+
+.item-section {
+    display: flex;
+}
+
+.items > h2 {
+    padding-bottom: 12px;
+    padding-top: 18px;
+    border-bottom: 2px solid rgb(150, 60, 192);
+    font-weight: bold;
+    color:rgb(150, 60, 192);
+    font-style: italic;
+}
+
+.items img {
+    width: 100%;
+    padding-top: 25px;
+}
+
+.product .add {
+    padding: 12px;
+    margin-left: 10px;
+    margin-top: 12px;
+    outline: none;
+    border: none;
+    background-color:rgb(150, 60, 192);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0.5em;
+    transition: background-color 0.45s ease;
+}
+
+.product .add:hover {
+    background-color: rgb(119, 28, 161);
+    cursor: pointer;
+}
+
+.product h3 {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 6px;
+}
+
+/* IPAD CODE */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+.about {
+    display: block;
+    padding-top: 22px;
+
+}
+
+.about img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.about h2 {
+    font-size: 32px;
+    padding-bottom: 16px;
+}
+
+.about h3 {
+    padding-top: 8px;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.product {
+    display: inline;
+    padding-bottom: 90px;
+}
+
+.item-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.items > h2 {
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+
+.product h2 {
+    padding-left: 30px;
+}
+
+.product h3 {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 6px;
+    padding-left: 50px;
+}
+
+.product .add {
+    padding: 18px 55px;
+    font-size: 22px;
+}
+
+}
+
+/* IPHONE CODE */
+
+@media screen and (max-width: 767px){
+    .container {
+        max-width: 80%;
+    }
+
+    header h2 {
+        padding-left: 25px;
+        font-size: 28px;
+    }
+
+    header a {
+        font-size: 18px;
+        padding-left: 60px;
+        text-decoration: underline;
+    }
+
+    .about {
+        display: block;
+        padding-top: 22px;
+    
+    }
+    
+    .about img {
+        width: 100%;
+        padding-bottom: 20px;
+        padding-left: 14px;
+    }
+    
+    .about h2 {
+        font-size: 32px;
+        padding-bottom: 8px;
+        font-weight: bold;
+    }
+    
+    .about h3 {
+        padding-top: 30px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .item-section {
+        display: grid;
+    }
+
+    .items h2 {
+        font-size: 30px;
+        padding-top: 0px;
+}
+
+    .item-section h3 {
+        font-size: 20px;
+    }
+
+    .product .add {
+        padding: 20px;
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    .add {
+        width: 100%;
+    }
+
+    .buy {
+        text-align: center;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    }
+
+
+
+
+
